@@ -1,0 +1,33 @@
+{
+    "name": "Find New Records Test",
+    "description": "Finds new records using cron",
+    "namespace": "Crons\\ExternalModule",
+    "framework-version": 3,
+    "authors": [
+        {
+            "name": "Ryan Antcliff",
+            "email": "antcliffr12@gmail.com",
+            "institution": "University of Vanderbilt"
+        }
+    ],
+    "links":{
+        "project": [
+            {
+                "name": "Crons",
+                "icon": "fas fa-globe",
+                "url": "pages/test.php"
+            }
+        ]
+    },
+    "crons": [
+        {
+            "cron_name": "update-new-records",
+            "cron_description": "Runs every 30 seconds to check for new records",
+            "method": "run_cron",
+            "cron_frequency": "0030",
+            "cron_max_run_time": "60"
+        }
+    ]
+ 
+   
+}
